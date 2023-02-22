@@ -6,6 +6,10 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.page {
+  min-height: 100vh;
+}
+
 .limit__container {
   padding: 0 20px !important;
   max-width: $max-width-lg;
