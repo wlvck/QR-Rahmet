@@ -19,6 +19,9 @@ import user from "./icons/user";
 import headPhone from "./icons/headPhone";
 import device from "./icons/headPhone";
 import barGraph from "./icons/barGraph";
+import users from "./icons/users";
+import discount from "./icons/discount";
+import book from "./icons/book";
 export default {
   name: "icon",
   props: [
@@ -28,6 +31,9 @@ export default {
     logo,
     arrowDown,
     menuToggle,
+    book,
+    discount,
+    users,
     barGraph,
     headPhone,
     circleHeart,
