@@ -6,6 +6,7 @@
       <WorkProcess/>
       <Advantages/>
       <FunctionalOffice/>
+      <Partners/>
     </div>
     <Footer/>
   </div>
@@ -18,4 +19,5 @@ import Banner from "../components/Banner";
 import WorkProcess from "../components/WorkProcess";
 import Advantages from "../components/Advantages";
 import FunctionalOffice from "../components/FunctionalOffice";
+import Partners from "../components/Partners";
 </script>
