@@ -370,9 +370,17 @@
   .buttons {
     flex-direction: column;
 
+    button {
+      transition: 0.5s;
+    }
+
     button:first-child {
       margin-bottom: 24px;
       margin-right: 0 !important;
+    }
+
+    button:disabled {
+      background: #B3B0AA !important;
     }
   }
 }

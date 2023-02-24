@@ -22,6 +22,7 @@ import barGraph from "./icons/barGraph";
 import users from "./icons/users";
 import discount from "./icons/discount";
 import book from "./icons/book";
+import close from "./icons/close";
 export default {
   name: "icon",
   props: [
@@ -34,6 +35,7 @@ export default {
     book,
     discount,
     users,
+    close,
     barGraph,
     headPhone,
     circleHeart,
