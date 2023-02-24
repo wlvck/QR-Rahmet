@@ -12,7 +12,7 @@
           <icon class="ml-2" icon-name="arrow-down"/>
         </li>
         <li class="menu__toggle ml-7" @click="isMenuOpen = !isMenuOpen">
-          <icon icon-name="menu-toggle"/>
+          <icon :icon-name="isMenuOpen ? 'close' : 'menu-toggle'"/>
         </li>
       </ul>
     </div>

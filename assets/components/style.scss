@@ -11,6 +11,11 @@
 
   .menu__toggle {
     display: none;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
   }
 
   li {
@@ -106,14 +111,25 @@
   color: $gray;
 }
 
+.tipLimit {
+  max-width: 456px;
+}
+
+.restaurantLimit {
+  max-width: 872px;
+
+  .v-card-text {
+    margin-top: 32px;
+  }
+}
+
 .modal__container {
   background: #FFFFFF;
   border-radius: 28px !important;
-  max-width: 456px;
-  width: 100%;
   padding: 32px !important;
+  width: 100%;
 
-  .v-card-title {
+  .modal__title {
     font-weight: 700;
     font-size: 28px;
     line-height: 36px !important;
@@ -169,6 +185,66 @@
       }
     }
   }
+
+  .modal__buttons {
+    button:last-child {
+      margin-left: 16px;
+      color: $orange;
+      border: 2px solid $orange;
+      background: white;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+.restaurant__info {
+  padding: 0 !important;
+  margin-top: 24px;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  .info__block {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+    h4 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      color: $black
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $black
+    }
+  }
+}
+
+.form__grid {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px;
+
+  .v-input {
+    overflow: hidden !important;
+    border-radius: 12px !important;
+  }
+}
+
+.v-field__outline, .v-input__details {
+  display: none !important;
 }
 
 .useful__links {
@@ -236,6 +312,37 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .restaurant__info, .form__grid {
+    grid-template-columns: 1fr !important;
+  }
+  .modal__container {
+    .modal__title {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    .restaurant__info {
+      padding: 16px;
+
+      .info__block {
+        h4 {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .modal__buttons {
+    flex-direction: column !important;
+
+    button {
+      width: 100%;
+      margin-left: 0 !important;
+    }
+  }
+}
+
 @media screen and (max-width: 450px) {
   .modal__container {
     padding: 24px 16px !important;
@@ -243,6 +350,37 @@
     .otp-input {
       width: 44px !important;
     }
+
+    .v-card-text {
+      margin-bottom: 16px;
+      margin-top: 24px;
+    }
+  }
+
+  .restaurant__info {
+    gap: 16px;
+    margin-bottom: 24px;
+
+    .info__block {
+      padding: 16px;
+      border-radius: 16px;
+
+      h4 {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  .modal__container .modal__buttons button:last-child {
+    margin-top: 16px !important;
+  }
+  .form__grid {
+    margin-bottom: 0;
   }
 }
 
