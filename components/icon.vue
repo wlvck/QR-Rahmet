@@ -11,6 +11,8 @@ import whatsapp from "./icons/whatsapp";
 import telegram from "./icons/telegram";
 import mail from "./icons/mail";
 import phone from "./icons/phone";
+import checkedMark from "./icons/checkedMark";
+import unCheckedMark from "./icons/unCheckedMark";
 export default {
   name: "icon",
   props: [
@@ -22,6 +24,8 @@ export default {
     menuToggle,
     instagram,
     phone,
+    checkedMark,
+    unCheckedMark,
     telegram,
     whatsapp,
     mail,
