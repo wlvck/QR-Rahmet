@@ -157,6 +157,44 @@
   }
 }
 
+.login__container {
+  background: #FFFFFF;
+  border-radius: 28px;
+  padding: 32px;
+  margin: 96px auto;
+  max-width: 468px;
+  width: 100%;
+
+  .error__message {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 24px;
+    color: #DD0000;
+  }
+
+  .v-input {
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .v-btn {
+    border-radius: 16px;
+    width: 100%;
+    background: $black;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    height: 56px !important;
+    margin-top: 32px;
+  }
+}
+
 .partner__container {
   padding-top: 46px !important;
   padding-bottom: 96px !important;
@@ -386,6 +424,19 @@
 }
 
 @media screen and (max-width: 450px) {
+  .login__container {
+    padding: 16px 16px;
+    margin: 40px auto;
+
+    h1 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .v-btn {
+      margin-top: 24px;
+    }
+  }
   .partner__container {
     .partner {
       max-width: 99px;

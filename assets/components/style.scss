@@ -236,7 +236,9 @@
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
   gap: 20px;
+}
 
+.v-form {
   .v-input {
     overflow: hidden !important;
     border-radius: 12px !important;
