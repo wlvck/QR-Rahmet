@@ -23,6 +23,11 @@ import users from "./icons/users";
 import discount from "./icons/discount";
 import book from "./icons/book";
 import close from "./icons/close";
+import search from "./icons/search";
+import trash from "./icons/trash";
+import plus from "./icons/plus";
+import star from "./icons/star";
+import sortArrow from "./icons/sortArrow";
 export default {
   name: "icon",
   props: [
@@ -31,7 +36,12 @@ export default {
   components: {
     logo,
     arrowDown,
+    star,
+    sortArrow,
+    plus,
     menuToggle,
+    trash,
+    search,
     book,
     discount,
     users,

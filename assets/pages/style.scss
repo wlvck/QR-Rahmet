@@ -157,6 +157,123 @@
   }
 }
 
+.account__container {
+  padding-top: 48px;
+  padding-bottom: 90px;
+
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 0 32px 0;
+  }
+}
+
+.container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__buttons {
+  .v-btn {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: initial;
+    line-height: 24px;
+    height: 56px !important;
+    border-radius: 16px;
+    padding: 16px 32px !important;
+
+    &:first-child {
+      margin-right: 16px;
+      color: white;
+      background-color: $black;
+    }
+
+    &:last-child {
+      svg path {
+        stroke: $orange;
+      }
+
+      border: 2px solid #DDAC00;
+      color: $orange;
+    }
+  }
+}
+
+.v-table {
+  border-radius: 16px !important;
+  margin-bottom: 96px;
+}
+
+.v-tab--selected .v-tab__slider {
+  display: none !important;
+}
+
+.v-tabs--density-default, .v-btn.v-btn--density-default {
+  height: 56px !important;
+}
+
+.v-table__wrapper > table > thead > tr > th {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #55534E;
+}
+
+.v-table .v-table__wrapper > table > tbody > tr:not(:last-child) > td {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #171613;
+
+}
+
+.search__block {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 18px 22px;
+
+  input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4E5260;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.v-slide-group__content {
+  margin-bottom: 24px;
+
+  button {
+    margin: 0 !important;
+    border-radius: 16px !important;
+    padding: 16px 32px !important;
+    text-transform: initial;
+
+    .v-btn__content {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #DDAC00;
+    }
+  }
+}
+
+.v-slide-group-item--active {
+  background: white !important;
+}
+
 .login__container {
   background: #FFFFFF;
   border-radius: 28px;
