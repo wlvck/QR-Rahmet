@@ -28,6 +28,7 @@ import trash from "./icons/trash";
 import plus from "./icons/plus";
 import star from "./icons/star";
 import link from "./icons/link";
+import avatar from "./icons/avatar";
 import sortArrow from "./icons/sortArrow";
 export default {
   name: "icon",
@@ -38,6 +39,7 @@ export default {
     logo,
     arrowDown,
     star,
+    avatar,
     sortArrow,
     plus,
     menuToggle,

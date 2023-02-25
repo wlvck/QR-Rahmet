@@ -11,7 +11,7 @@
           </div>
           <v-form>
             <v-text-field label="Логин"/>
-            <v-text-field label="Пароль"/>
+            <v-text-field type="password" label="Пароль"/>
             <v-btn elevation="0">Пароль</v-btn>
           </v-form>
         </div>

@@ -175,6 +175,23 @@
   color: $orange !important;
 }
 
+.avatar__block {
+  margin-left: 24px;
+  background: #F2F2F2;
+  height: max-content;
+  border-radius: 24px;
+  padding: 20px;
+  margin-bottom: 25px;
+
+  h4 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: $orange;
+    margin-top: 15px;
+  }
+}
+
 .delete__group {
   display: grid;
   width: 100%;
@@ -296,6 +313,10 @@
   background: white !important;
 }
 
+.employee-login__container {
+  max-width: 628px !important;
+}
+
 .login__container {
   background: #FFFFFF;
   border-radius: 28px;
@@ -303,6 +324,11 @@
   margin: 96px auto;
   max-width: 468px;
   width: 100%;
+
+  .max-width {
+    max-width: 404px;
+    width: 100%;
+  }
 
   .error__message {
     font-size: 14px;
@@ -502,6 +528,21 @@
 }
 
 @media screen and (max-width: 700px) {
+  .employee-login__container {
+    .v-form {
+      flex-direction: column-reverse;
+
+      .avatar__container {
+        .avatar__block {
+          margin-left: 0;
+        }
+
+        .v-divider {
+          display: none !important;
+        }
+      }
+    }
+  }
   .partner__container {
     padding-top: 48px !important;
     padding-bottom: 48px !important;
