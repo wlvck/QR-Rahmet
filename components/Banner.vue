@@ -121,7 +121,7 @@ import Icon from "./icon";
 
 const filled = ref(false)
 const leaveTip = ref(false)
-const addRestaurant = ref(false)
+let addRestaurant = ref(false)
 const handleOnComplete = (value) => {
 }
 const handleOnChange = (value) => {

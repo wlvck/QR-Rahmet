@@ -165,8 +165,30 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
-    margin: 0 0 32px 0;
+    margin: 48px 0 32px 0;
   }
+}
+
+.secondary__btn {
+  background: white !important;
+  border: 2px solid $orange !important;
+  color: $orange !important;
+}
+
+.delete__group {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+
+  button {
+    margin-top: 0;
+  }
+}
+
+.primary__btn {
+  background: $black !important;
+  color: white !important;
 }
 
 .container__header {

@@ -10,8 +10,14 @@
             <v-tab :value="2">Отзывы</v-tab>
           </v-tabs>
           <div class="header__buttons">
-            <v-btn elevation="0"><icon class="mr-4" icon-name="plus"/>Добавить сотрудника</v-btn>
-            <v-btn elevation="0"><icon class="mr-4" icon-name="plus"/>Выгрузить отчет</v-btn>
+            <v-btn elevation="0" @click.prevent="addEmployee = true">
+              <icon class="mr-4" icon-name="plus"/>
+              Добавить сотрудника
+            </v-btn>
+            <v-btn elevation="0">
+              <icon class="mr-4" icon-name="plus"/>
+              Выгрузить отчет
+            </v-btn>
           </div>
         </div>
         <v-window v-model="tab">
@@ -34,7 +40,8 @@
                   Сумма полученных чаевых
                 </th>
                 <th class="text-center">
-                  Рейтинг <icon icon-name="sort-arrow"/>
+                  Рейтинг
+                  <icon icon-name="sort-arrow"/>
                 </th>
                 <th class="text-center">
                   Удаление сотрудника
@@ -49,8 +56,12 @@
                 <td>556424</td>
                 <td class="text-center">Абзалов Данияр</td>
                 <td class="text-center">2 000 ₸</td>
-                <td class="text-center">5 <icon icon-name="star"/></td>
-                <td class="text-center"><icon icon-name="trash"/></td>
+                <td class="text-center">5
+                  <icon icon-name="star"/>
+                </td>
+                <td class="text-center">
+                  <icon class="pointer" icon-name="trash" @click="deleteEmployee = true"/>
+                </td>
               </tr>
               </tbody>
             </v-table>
@@ -74,7 +85,8 @@
                   Сумма полученных чаевых
                 </th>
                 <th class="text-center">
-                  Рейтинг <icon icon-name="sort-arrow"/>
+                  Рейтинг
+                  <icon icon-name="sort-arrow"/>
                 </th>
                 <th class="text-center">
                   Удаление сотрудника
@@ -89,8 +101,12 @@
                 <td>556424</td>
                 <td class="text-center">Абзалов Данияр</td>
                 <td class="text-center">2 000 ₸</td>
-                <td class="text-center">5 <icon icon-name="star"/></td>
-                <td class="text-center"><icon icon-name="trash"/></td>
+                <td class="text-center">5
+                  <icon icon-name="star"/>
+                </td>
+                <td class="text-center">
+                  <icon icon-name="trash"/>
+                </td>
               </tr>
               </tbody>
             </v-table>
@@ -99,6 +115,39 @@
       </div>
     </div>
     <Footer/>
+    <v-dialog width="456px" v-model="addEmployee">
+      <v-card class="modal__container add__employee">
+        <div class="d-flex justify-end pointer" @click.prevent="addEmployee = false">
+          <icon icon-name="close"/>
+        </div>
+        <div class="modal__title">
+          Добавить сотрудника
+        </div>
+        <h5 class="mt-3 mb-6">ID сотрудника: 156-545</h5>
+        <v-card-text class="mb-0">
+          Отправьте ссылку ниже сотруднику.
+          Сотрудник пройдет регистрацию по ссылке
+        </v-card-text>
+        <v-btn class="mt-4" elevation="0">
+          <icon icon-name="link"/>
+          Скопировать ссылку
+        </v-btn>
+      </v-card>
+    </v-dialog>
+    <v-dialog width="456px" v-model="deleteEmployee">
+      <v-card class="modal__container">
+        <h4 class="mt-3 mb-6">Удалить сотрудника
+          Абзалов Данияр (ID - 556435)?</h4>
+        <div class="delete__group">
+          <v-btn class="secondary__btn flex-shrink-1 flex-grow-1" elevation="0" @click="deleteEmployee = false">
+            Отмена
+          </v-btn>
+          <v-btn class="primary__btn flex-shrink-1 flex-grow-1" elevation="0" @click="deleteEmployee = false">
+            Да, удалить
+          </v-btn>
+        </div>
+      </v-card>
+    </v-dialog>
   </div>
 </template>
 
@@ -108,5 +157,7 @@ import Footer from "../../components/Footer";
 import {ref} from "vue";
 import Icon from "../../components/icon";
 
-const tab = ref(1)
+const tab = ref()
+const addEmployee = ref(false)
+const deleteEmployee = ref(false)
 </script>

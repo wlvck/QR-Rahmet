@@ -27,6 +27,7 @@ import search from "./icons/search";
 import trash from "./icons/trash";
 import plus from "./icons/plus";
 import star from "./icons/star";
+import link from "./icons/link";
 import sortArrow from "./icons/sortArrow";
 export default {
   name: "icon",
@@ -41,6 +42,7 @@ export default {
     plus,
     menuToggle,
     trash,
+    link,
     search,
     book,
     discount,
