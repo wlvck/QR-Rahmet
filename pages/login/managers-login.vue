@@ -12,7 +12,7 @@
           <v-form>
             <v-text-field label="Логин"/>
             <v-text-field type="password" label="Пароль"/>
-            <v-btn elevation="0">Пароль</v-btn>
+            <v-btn elevation="0" @click="redirect">Войти</v-btn>
           </v-form>
         </div>
       </div>
@@ -24,4 +24,9 @@
 <script setup>
 import NavBar from '../../components/NavBar'
 import Footer from "../../components/Footer";
+import {useRouter} from "nuxt/app";
+const router = useRouter()
+const redirect = ()=>{
+  router.push('/login/managers-login')
+}
 </script>

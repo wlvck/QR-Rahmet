@@ -170,6 +170,8 @@
 }
 
 .secondary__btn {
+  width: 100%;
+  border-radius: 12px !important;
   background: white !important;
   border: 2px solid $orange !important;
   color: $orange !important;
@@ -204,8 +206,10 @@
 }
 
 .primary__btn {
+  width: 100%;
   background: $black !important;
   color: white !important;
+  border-radius: 16px !important;
 }
 
 .container__header {
@@ -315,6 +319,151 @@
 
 .employee-login__container {
   max-width: 628px !important;
+}
+
+.checkbox {
+  display: flex;
+  align-items: start;
+
+  input {
+    margin-top: 4px;
+    width: 16px !important;
+    height: 16px !important;
+    accent-color: $black;
+    margin-right: 12px;
+  }
+
+  label {
+    a {
+      text-decoration: none;
+      color: $orange;
+    }
+
+    max-width: 396px;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 20px;
+  }
+}
+
+.bank__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 16px;
+  grid-column-gap: 88px;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 9px;
+    }
+
+    label {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      color: #171613;
+    }
+  }
+}
+
+.orange__hover {
+  transition: 0.4s;
+
+  &:hover {
+    color: white !important;
+    background: $orange !important;
+  }
+}
+
+.application__container {
+  background: #FFFFFF;
+  border-radius: 28px;
+  padding: 32px;
+  margin: 96px auto;
+  max-width: 468px;
+  width: 100%;
+
+  .grid__btn {
+    display: none;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #171613;
+    margin-bottom: 32px;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  .v-text-field {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+  }
+
+  .fastFill {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      width: 90.25px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $orange;
+      border-radius: 8px;
+      color: $orange;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .application__block {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 12px 16px;
+    display: flex;
+
+    img {
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+    }
+
+    h4 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: #171613;
+      margin: 0;
+    }
+
+    p {
+      margin: 4px 0 0 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
 }
 
 .login__container {
@@ -527,6 +676,31 @@
   }
 }
 
+.modal__row {
+  margin-top: 24px;
+
+  div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+
+    svg {
+      margin-right: 12px;
+    }
+
+    label {
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
 @media screen and (max-width: 700px) {
   .employee-login__container {
     .v-form {
@@ -604,6 +778,55 @@
 }
 
 @media screen and (max-width: 450px) {
+  .bank__grid {
+    grid-column-gap: 10px;
+  }
+  .application__container {
+    padding: 16px;
+
+    h1 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      color: #171613;
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      margin-top: 16px;
+      margin-bottom: 12px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .desktop {
+      display: none !important;
+    }
+
+    .grid__btn {
+      display: block;
+
+      p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      div {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+    }
+
+    .fastFill {
+      p {
+        width: 70px;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
   .login__container {
     padding: 16px 16px;
     margin: 40px auto;

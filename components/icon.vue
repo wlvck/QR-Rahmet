@@ -29,6 +29,14 @@ import plus from "./icons/plus";
 import star from "./icons/star";
 import link from "./icons/link";
 import avatar from "./icons/avatar";
+import evStar from "./icons/evStar";
+import otherBanks from "./icons/otherBanks";
+import kaspi from "./icons/kaspi";
+import jusan from "./icons/jusan";
+import halyk from "./icons/halyk";
+import bcc from "./icons/bcc";
+import arrowRight from "./icons/arrowRight";
+import forte from "./icons/forte";
 import sortArrow from "./icons/sortArrow";
 export default {
   name: "icon",
@@ -37,8 +45,16 @@ export default {
   ],
   components: {
     logo,
+    kaspi,
+    otherBanks,
     arrowDown,
+    arrowRight,
+    forte,
     star,
+    jusan,
+    evStar,
+    bcc,
+    halyk,
     avatar,
     sortArrow,
     plus,

@@ -44,6 +44,7 @@
           />
         </div>
         <v-btn
+            @click.prevent="$router.push('/guest')"
             :disabled="!filled"
             elevation="0">
           Продолжить
