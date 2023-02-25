@@ -321,9 +321,39 @@
   max-width: 628px !important;
 }
 
+.app__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    margin: 0 0 16px 0 !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .total {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.status__block {
+  margin-bottom: 32px;
+
+  p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #20A354;
+  }
+
+}
+
 .checkbox {
   display: flex;
-  align-items: start;
 
   input {
     margin-top: 4px;

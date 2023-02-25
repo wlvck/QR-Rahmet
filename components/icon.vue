@@ -37,6 +37,7 @@ import halyk from "./icons/halyk";
 import bcc from "./icons/bcc";
 import arrowRight from "./icons/arrowRight";
 import forte from "./icons/forte";
+import successPayment from "./icons/successPayment";
 import sortArrow from "./icons/sortArrow";
 export default {
   name: "icon",
@@ -46,6 +47,7 @@ export default {
   components: {
     logo,
     kaspi,
+    successPayment,
     otherBanks,
     arrowDown,
     arrowRight,

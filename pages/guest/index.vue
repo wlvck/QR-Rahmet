@@ -131,13 +131,8 @@
 <script setup>
 import NavBar from '../../components/NavBar'
 import Footer from "../../components/Footer";
-import {useRouter} from "nuxt/app";
 import Icon from "../../components/icon";
 import {ref} from "vue";
 
-const router = useRouter()
-const redirect = () => {
-  router.push('/login/managers-login')
-}
 const selectBank = ref(false)
 </script>
