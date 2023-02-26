@@ -585,6 +585,26 @@
   }
 }
 
+.restaurant__logo {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+
+  img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    margin-right: 16px;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+  }
+}
+
 .partner__container {
   padding-top: 46px !important;
   padding-bottom: 96px !important;
