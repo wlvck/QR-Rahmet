@@ -1,7 +1,7 @@
 <template>
   <div class="navbar__container">
     <div class="limit__container navbar__items d-flex align-center justify-space-between">
-      <Icon class="pointer" icon-name="logo"/>
+      <Icon class="pointer" icon-name="logo" @click="$router.push('/')"/>
       <ul class="navbar__items d-flex align-center">
         <li>Как это работает</li>
         <li>Для кого</li>
