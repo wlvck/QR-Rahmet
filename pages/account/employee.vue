@@ -50,10 +50,10 @@
             <v-divider class="my-6"/>
             <v-row>
               <v-col lg="6" sm="6" cols="12">
-                <v-btn elevation="0" class="primary__btn">Вывести средства</v-btn>
+                <v-btn elevation="0" class="primary__btn" @click="withdraw = true">Вывести средства</v-btn>
               </v-col>
               <v-col lg="6" sm="6" cols="12">
-                <v-btn elevation="0" class="secondary__btn">Изменить пароль</v-btn>
+                <v-btn elevation="0" class="secondary__btn" @click="password = true">Изменить пароль</v-btn>
               </v-col>
             </v-row>
           </v-form>
@@ -61,6 +61,48 @@
       </div>
     </div>
     <Footer/>
+    <v-dialog v-model="withdraw" width="468px">
+      <div class="modal__container">
+        <div class="d-flex justify-end">
+          <icon class="pointer" icon-name="close" @click="withdraw = false"/>
+        </div>
+        <div class="modal__title mb-6">
+          Вывести средства
+        </div>
+        <v-form>
+          <v-text-field label="Номер карты"/>
+          <v-row class="mt-4">
+            <v-col cols="6">
+              <v-text-field label="Срок действия"/>
+            </v-col>
+            <v-col cols="6">
+              <v-text-field label="CVV/CVC"/>
+            </v-col>
+          </v-row>
+          <v-btn elevation="0" class="primary__btn mt-6">
+            Вывести
+          </v-btn>
+        </v-form>
+      </div>
+    </v-dialog>
+    <v-dialog v-model="password" width="468px">
+      <div class="modal__container">
+        <div class="d-flex justify-end">
+          <icon class="pointer" icon-name="close" @click="password = false"/>
+        </div>
+        <div class="modal__title mb-6">
+          Изменить пароль
+        </div>
+        <v-form>
+          <v-text-field label="Старый пароль"/>
+          <v-text-field class="my-4" label="Новый пароль"/>
+          <v-text-field label="Повторите новый пароль"/>
+          <v-btn elevation="0" class="primary__btn mt-6">
+            Сохранить
+          </v-btn>
+        </v-form>
+      </div>
+    </v-dialog>
   </div>
 </template>
 
@@ -69,4 +111,6 @@ import NavBar from '../../components/NavBar'
 import Footer from "../../components/Footer";
 import {ref} from "vue";
 import Icon from "../../components/icon";
+const withdraw = ref(false)
+const password = ref(false)
 </script>
