@@ -5,6 +5,7 @@
       <Banner/>
       <WorkProcess/>
       <Advantages/>
+      <Carousel/>
       <FunctionalOffice/>
       <Partners/>
     </div>
@@ -18,6 +19,7 @@ import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import WorkProcess from "../components/WorkProcess";
 import Advantages from "../components/Advantages";
+import Carousel from "../components/Carousel";
 import FunctionalOffice from "../components/FunctionalOffice";
 import Partners from "../components/Partners";
 </script>
