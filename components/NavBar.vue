@@ -10,6 +10,10 @@
         <li v-if="route.name === 'index'">Контакты</li>
         <li class="locale">Рус
           <icon class="ml-2" icon-name="arrow-down"/>
+          <div class="languages">
+            <p>Каз</p>
+            <p>Eng</p>
+          </div>
         </li>
         <li class="menu__toggle ml-7" @click="isMenuOpen = !isMenuOpen">
           <icon :icon-name="isMenuOpen ? 'close' : 'menu-toggle'"/>
