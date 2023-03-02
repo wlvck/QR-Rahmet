@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar__container" :class="route.name === 'index' ? 'py-10' : 'py-6'">
+  <v-row no-gutters v-scroll="onScroll" class="navbar__container d-block" :class="route.name === 'index' ? 'py-10' : 'py-6'">
     <div class="limit__container navbar__items d-flex align-center justify-space-between">
       <Icon class="pointer" icon-name="logo" @click="$router.push('/')"/>
       <ul class="navbar__items d-flex align-center">
@@ -27,15 +27,18 @@
     </div>
     <transition name="slide-fade">
       <ul v-if="isMenuOpen" class="mobile__menuItems d-flex flex-column">
-        <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#howDoesItWork">Как это работает</a>
+        <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#howDoesItWork">Как это
+          работает</a>
         </li>
         <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#forWhom">Для кого</a></li>
-        <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#management">Управление</a></li>
-        <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#advantages">Преимущества</a></li>
+        <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#management">Управление</a>
+        </li>
+        <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#advantages">Преимущества</a>
+        </li>
         <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#contacts">Контакты</a></li>
       </ul>
     </transition>
-  </div>
+  </v-row>
 </template>
 
 <script setup>
@@ -45,4 +48,12 @@ import {useRoute} from "nuxt/app";
 
 const route = useRoute()
 let isMenuOpen = ref(false)
+let offSetTop = ref(0)
+const onScroll = (e) => {
+  offSetTop.value = window.scrollY
+}
+
 </script>
+
+<style>
+</style>

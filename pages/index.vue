@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex flex-column page">
     <NavBar/>
-    <div class="flex-shrink-1 flex-grow-1">
+    <div id="scroll-target" class="flex-shrink-1 flex-grow-1">
       <Banner/>
       <WorkProcess/>
       <Advantages/>
