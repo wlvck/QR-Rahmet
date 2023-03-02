@@ -9,7 +9,7 @@
             <v-tab :value="1">Сотрудники</v-tab>
             <v-tab :value="2">Отзывы</v-tab>
           </v-tabs>
-          <div class="header__buttons">
+          <div class="header__buttons d-flex">
             <v-btn elevation="0" @click.prevent="addEmployee = true">
               <icon class="mr-4" icon-name="plus"/>
               Добавить сотрудника
@@ -128,7 +128,7 @@
           Отправьте ссылку ниже сотруднику.
           Сотрудник пройдет регистрацию по ссылке
         </v-card-text>
-        <v-btn class="mt-4" elevation="0">
+        <v-btn class="mt-4 secondary__btn" elevation="0">
           <icon icon-name="link"/>
           Скопировать ссылку
         </v-btn>

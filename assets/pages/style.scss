@@ -674,6 +674,9 @@
 }
 
 @media screen and (max-width: 1220px) {
+  .header__buttons .v-btn {
+    padding: 16px 10px !important;
+  }
   .partner__container {
     .partners {
       grid-template-columns: repeat(4, 1fr);
@@ -726,6 +729,21 @@
 }
 
 @media screen and (max-width: 850px) {
+  .container__header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+
+    .header__buttons {
+      margin-bottom: 25px;
+    }
+
+    //.v-slide-group__container {
+    //  .v-btn {
+    //    margin-right: 15px !important;
+    //  }
+    //}
+  }
   .functional__container {
     padding: 30px;
 
@@ -875,6 +893,18 @@
 }
 
 @media screen and (max-width: 599px) {
+  .header__buttons {
+    flex-direction: column !important;
+
+    .v-btn {
+      padding: 16px 32px !important;
+      width: 100% !important;
+    }
+
+    .v-btn:first-child {
+      margin: 0 0 16px 0 !important;
+    }
+  }
   .profile__name-desktop {
     display: none !important;
   }

@@ -92,32 +92,32 @@
           Выберите банк
         </div>
         <div class="modal__row">
-          <div class="pointer">
+          <div class="pointer" @click="$router.push('/guest/payment-status')">
             <icon icon-name="kaspi"/>
             <label class="flex-shrink-1 flex-grow-1">Kaspi</label>
             <icon icon-name="arrow-right"/>
           </div>
-          <div class="pointer">
+          <div class="pointer" @click="$router.push('/guest/payment-status')">
             <icon icon-name="halyk"/>
             <label class="flex-shrink-1 flex-grow-1">HalykBank</label>
             <icon icon-name="arrow-right"/>
           </div>
-          <div class="pointer">
+          <div class="pointer" @click="$router.push('/guest/payment-status')">
             <icon icon-name="bcc"/>
             <label class="flex-shrink-1 flex-grow-1">bcc.kz</label>
             <icon icon-name="arrow-right"/>
           </div>
-          <div class="pointer">
+          <div class="pointer" @click="$router.push('/guest/payment-status')">
             <icon icon-name="jusan"/>
             <label class="flex-shrink-1 flex-grow-1">Jusan</label>
             <icon icon-name="arrow-right"/>
           </div>
-          <div class="pointer">
+          <div class="pointer" @click="$router.push('/guest/payment-status')">
             <icon icon-name="forte"/>
             <label class="flex-shrink-1 flex-grow-1">forte</label>
             <icon icon-name="arrow-right"/>
           </div>
-          <div class="pointer">
+          <div class="pointer" @click="$router.push('/guest/payment-status')">
             <icon icon-name="other-banks"/>
             <label class="flex-shrink-1 flex-grow-1">Другие банки</label>
             <icon icon-name="arrow-right"/>

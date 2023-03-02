@@ -16,7 +16,7 @@
             <p>Eng</p>
           </div>
         </li>
-        <li class="menu__toggle ml-7" @click="isMenuOpen = !isMenuOpen">
+        <li v-if="route.name === 'index'" class="menu__toggle ml-7" @click="isMenuOpen = !isMenuOpen">
           <icon :icon-name="isMenuOpen ? 'close' : 'menu-toggle'"/>
         </li>
         <li v-if="route.name !== 'index'" class="restaurant__logo">
