@@ -268,7 +268,7 @@ export default {
     h3 {
       max-width: max-content;
       font-size: 20px;
-      margin-top: 40px;
+      margin-top: 20px;
       margin-bottom: 35px;
     }
   }
