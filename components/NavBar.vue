@@ -1,5 +1,5 @@
 <template>
-  <v-row no-gutters v-scroll="onScroll" class="navbar__container d-block" :class="route.name === 'index' ? 'py-10' : 'py-6'">
+  <div class="navbar__container d-block" :class="route.name === 'index' ? 'py-10' : 'py-6'">
     <div class="limit__container navbar__items d-flex align-center justify-space-between">
       <Icon class="pointer" icon-name="logo" @click="$router.push('/')"/>
       <ul class="navbar__items d-flex align-center">
@@ -38,7 +38,7 @@
         <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#contacts">Контакты</a></li>
       </ul>
     </transition>
-  </v-row>
+  </div>
 </template>
 
 <script setup>
