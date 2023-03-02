@@ -39,6 +39,9 @@ import arrowRight from "./icons/arrowRight";
 import forte from "./icons/forte";
 import successPayment from "./icons/successPayment";
 import sortArrow from "./icons/sortArrow";
+import forRestaurant from "./icons/forRestaurant";
+import forGuest from "./icons/forGuest";
+import forEmployee from "./icons/forEmployee";
 export default {
   name: "icon",
   props: [
@@ -46,10 +49,13 @@ export default {
   ],
   components: {
     logo,
+    forEmployee,
     kaspi,
     successPayment,
     otherBanks,
     arrowDown,
+    forGuest,
+    forRestaurant,
     arrowRight,
     forte,
     star,
