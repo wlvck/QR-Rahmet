@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel">
+  <div class="carousel" id="forWhom">
     <div class="limit__container">
       <h1>Для всех</h1>
       <div class="d-flex">

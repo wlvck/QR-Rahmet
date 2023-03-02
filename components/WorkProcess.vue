@@ -1,5 +1,5 @@
 <template>
-  <div class="limit__container">
+  <div class="limit__container" id="howDoesItWork">
     <div class="d-flex align-center justify-space-between work__process">
       <img src="../assets/images/iphone.png" alt="">
       <div class="process__content">

@@ -1,5 +1,5 @@
 <template>
-  <div class="advantages__container limit__container">
+  <div class="advantages__container limit__container" id="advantages">
     <h1>Преимущества</h1>
     <div class="items__block">
       <div class="block__item">

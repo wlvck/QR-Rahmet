@@ -18,9 +18,10 @@
     }
   }
 
-  li {
+  li a {
     list-style-type: none;
     font-weight: 600;
+    display: block;
     font-size: 16px;
     padding: 0 12px;
     cursor: pointer;
@@ -303,7 +304,7 @@
 }
 
 @media screen and (max-width: 1220px) {
-  .navbar__items li {
+  .navbar__items li a{
     padding: 0 5px;
   }
   .footer__col .col__header {
@@ -316,7 +317,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .navbar__items li {
+  .navbar__items li a{
     display: none;
   }
   .navbar__items .menu__toggle, .navbar__items .locale {

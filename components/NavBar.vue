@@ -3,12 +3,13 @@
     <div class="limit__container navbar__items d-flex align-center justify-space-between">
       <Icon class="pointer" icon-name="logo" @click="$router.push('/')"/>
       <ul class="navbar__items d-flex align-center">
-        <li v-if="route.name === 'index'">Как это работает</li>
-        <li v-if="route.name === 'index'">Для кого</li>
-        <li v-if="route.name === 'index'">Управление</li>
-        <li v-if="route.name === 'index'">Преимущества</li>
-        <li v-if="route.name === 'index'">Контакты</li>
-        <li class="locale">Рус
+        <li v-if="route.name === 'index'"><a class="text-decoration-none" href="#howDoesItWork">Как это работает</a>
+        </li>
+        <li v-if="route.name === 'index'"><a class="text-decoration-none" href="#forWhom">Для кого</a></li>
+        <li v-if="route.name === 'index'"><a class="text-decoration-none" href="#management">Управление</a></li>
+        <li v-if="route.name === 'index'"><a class="text-decoration-none" href="#advantages">Преимущества</a></li>
+        <li v-if="route.name === 'index'"><a class="text-decoration-none" href="#contacts">Контакты</a></li>
+        <li class="locale pointer" style="list-style: none; color: white; padding-left: 16px;">Рус
           <icon class="ml-2" icon-name="arrow-down"/>
           <div class="languages">
             <p>Каз</p>
@@ -26,11 +27,12 @@
     </div>
     <transition name="slide-fade">
       <ul v-if="isMenuOpen" class="mobile__menuItems d-flex flex-column">
-        <li>Как это работает</li>
-        <li>Для кого</li>
-        <li>Управление</li>
-        <li>Преимущества</li>
-        <li>Контакты</li>
+        <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#howDoesItWork">Как это работает</a>
+        </li>
+        <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#forWhom">Для кого</a></li>
+        <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#management">Управление</a></li>
+        <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#advantages">Преимущества</a></li>
+        <li @click="isMenuOpen = false"><a class="text-decoration-none text-white" href="#contacts">Контакты</a></li>
       </ul>
     </transition>
   </div>

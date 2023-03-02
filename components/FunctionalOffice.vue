@@ -1,5 +1,5 @@
 <template>
-  <div class="limit__container">
+  <div class="limit__container" id="management">
     <div class="functional__container">
       <h1>
         Функциональный кабинет для руководителя

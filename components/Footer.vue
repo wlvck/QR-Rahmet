@@ -1,5 +1,5 @@
 <template>
-  <div class="footer__container">
+  <div class="footer__container" id="contacts">
     <div class="limit__container">
       <v-row no-gutters>
         <v-col
