@@ -33,7 +33,7 @@
               <h3>Персональные сервисы
                 с логотипом вашего ресторана для клиентов
                 и сотрудников</h3>
-              <icon class="carousel__svg" icon-name="forRestaurant"/>
+              <img src="../assets/images/first.png" class="carousel__svg" alt="">
             </div>
           </div>
           <div class="carousel__item forGuest"
@@ -50,7 +50,7 @@
             <div class="d-flex align-center">
               <h3>Возможность оплаты счета
                 и чаевых через Kaspi, Jusan, Halyk Bank, Forte, BCC или другой картой</h3>
-              <icon class="carousel__svg" icon-name="forGuest"/>
+              <img src="../assets/images/second.png" class="carousel__svg" alt="">
             </div>
           </div>
           <div class="carousel__item forEmployee"
@@ -70,7 +70,7 @@
             <div class="d-flex align-center">
               <h3>Собирайте чаевые
                 в свою копилку и выводите средства онлайн</h3>
-              <icon class="carousel__svg" icon-name="forEmployee"/>
+              <img src="../assets/images/third.png" class="carousel__svg" alt="">
             </div>
           </div>
         </div>
@@ -202,6 +202,8 @@ export default {
   position: absolute;
   bottom: 0;
   right: 16px;
+  max-width: 329px;
+  width: 100%;
 }
 
 .slider__btn {
