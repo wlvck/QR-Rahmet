@@ -5,7 +5,7 @@
       <div class="px-4">
         <div class="login__container">
           <h1>Вход</h1>
-          <div class="error__message">
+          <div class="error__message" v-if="error">
             Логин или пароль введены неверно.
             Пожалуйста, попробуйте еще раз
           </div>
@@ -25,7 +25,9 @@
 import NavBar from '../../components/NavBar'
 import Footer from "../../components/Footer";
 import {useRouter} from "nuxt/app";
+import {ref} from "vue";
 const router = useRouter()
+const error = ref(false)
 const redirect = ()=>{
   router.push('/login/managers-login')
 }

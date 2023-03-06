@@ -3,7 +3,7 @@
     <NavBar/>
     <div class="flex-shrink-1 main__container flex-grow-1">
       <div class="px-4">
-        <div class="application__container">
+        <div class="application__container guest__container">
           <div class="status__block d-flex flex-column align-center justify-center">
             <icon icon-name="success-payment"/>
             <p class="text-center mt-4">Оплата прошла успешно</p>

@@ -3,7 +3,7 @@
     <NavBar/>
     <div class="flex-shrink-1 main__container flex-grow-1">
       <div class="px-4">
-        <div class="application__container">
+        <div class="application__container guest__container">
           <h1>Ресторан Дареджани</h1>
           <div class="application__block">
             <img class="mr-5" src="../../assets/images/avatar.png" alt="">

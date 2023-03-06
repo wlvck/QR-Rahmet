@@ -76,20 +76,20 @@
               <thead>
               <tr>
                 <th class="text-left">
-                  ID сотрудника
+                  Дата
+                </th>
+                <th class="text-center">
+                  Отзыв
                 </th>
                 <th class="text-center">
                   ФИО сотрудника
                 </th>
                 <th class="text-center">
-                  Сумма полученных чаевых
+                  ID сотрудника
                 </th>
                 <th class="text-center">
                   Рейтинг
                   <icon icon-name="sort-arrow"/>
-                </th>
-                <th class="text-center">
-                  Удаление сотрудника
                 </th>
               </tr>
               </thead>
@@ -98,14 +98,12 @@
                   v-for="item in 15"
                   :key="item"
               >
-                <td>556424</td>
+                <td>06.02.2023</td>
+                <td class="text-center">Все круто, спасибо за такой прием</td>
                 <td class="text-center">Абзалов Данияр</td>
-                <td class="text-center">2 000 ₸</td>
+                <td class="text-center">556424</td>
                 <td class="text-center">5
                   <icon icon-name="star"/>
-                </td>
-                <td class="text-center">
-                  <icon icon-name="trash"/>
                 </td>
               </tr>
               </tbody>

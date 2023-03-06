@@ -17,7 +17,7 @@ import addUser from "./icons/addUser";
 import circleHeart from "./icons/circleHeart";
 import user from "./icons/user";
 import headPhone from "./icons/headPhone";
-import device from "./icons/headPhone";
+import device from "./icons/device";
 import barGraph from "./icons/barGraph";
 import users from "./icons/users";
 import discount from "./icons/discount";
