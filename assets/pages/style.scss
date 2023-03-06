@@ -642,6 +642,10 @@
   border-radius: 32px;
   padding: 56px;
 
+  .header__buttons {
+    margin-top: 56px;
+  }
+
   h1 {
     margin-top: 16px;
     margin-bottom: 32px;
@@ -850,6 +854,10 @@
   .functional__container {
     padding: 32px 16px;
 
+    .header__buttons {
+      margin-top: 32px;
+    }
+
     h1 {
       font-size: 24px;
       margin-top: 0;
@@ -940,6 +948,11 @@
 }
 
 @media screen and (max-width: 450px) {
+  .search__block {
+    input {
+      font-size: 14px;
+    }
+  }
   .account__container {
     h1 {
       font-size: 24px;

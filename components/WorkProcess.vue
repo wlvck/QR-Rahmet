@@ -13,21 +13,21 @@
             </div>
           </li>
           <li class="d-flex">
-            <icon icon-name="un-checked-mark" class="mr-4"/>
+            <icon icon-name="checked-mark" class="mr-4"/>
             <div>
               <h4>Гости оставляют отзыв и чаевые на сайте</h4>
               <p>Без приложения и регистрации</p>
             </div>
           </li>
           <li class="d-flex">
-            <icon icon-name="un-checked-mark" class="mr-4"/>
+            <icon icon-name="checked-mark" class="mr-4"/>
             <div>
               <h4>Моментальный вывод безналичных и чаевых</h4>
               <p>Для работников заведения</p>
             </div>
           </li>
           <li class="d-flex">
-            <icon icon-name="un-checked-mark" class="mr-4"/>
+            <icon icon-name="checked-mark" class="mr-4"/>
             <div>
               <h4>Детальная статистика для ресторана</h4>
               <p>Данные об отзывах и чаевых </p>

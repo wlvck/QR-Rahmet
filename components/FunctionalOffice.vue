@@ -24,6 +24,14 @@
           <h4>Подробная аналитика по чаевым и рейтингу</h4>
         </div>
       </div>
+      <div class="header__buttons d-flex">
+        <v-btn elevation="0">
+          Подключить заведение
+        </v-btn>
+        <v-btn elevation="0">
+          Скачать презентацию
+        </v-btn>
+      </div>
     </div>
   </div>
 </template>

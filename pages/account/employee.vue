@@ -38,19 +38,15 @@
           </v-row>
           <v-divider class="my-6"/>
           <v-form>
-            <v-row>
-              <v-col lg="6" sm="6" cols="12">
-                <v-text-field class="mb-4" label="ИИН"/>
-                <v-text-field label="Номер телефона"/>
-              </v-col>
-              <v-col lg="6" sm="6" cols="12">
-                <v-text-field label="ФИО"/>
-              </v-col>
-            </v-row>
+            <div class="employee__grid">
+              <v-text-field label="ИИН"/>
+              <v-text-field label="ФИО"/>
+              <v-text-field label="Номер телефона"/>
+            </div>
             <v-divider class="my-6"/>
             <v-row>
               <v-col lg="6" sm="6" cols="12">
-                <v-btn elevation="0" class="primary__btn" @click="withdraw = true">Вывести средства</v-btn>
+                <v-btn elevation="0" class="primary__btn" @click="withdraw = true">Перевести</v-btn>
               </v-col>
               <v-col lg="6" sm="6" cols="12">
                 <v-btn elevation="0" class="secondary__btn" @click="password = true">Изменить пароль</v-btn>
