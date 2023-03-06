@@ -9,7 +9,12 @@
         <li v-if="route.name === 'index'"><a class="text-decoration-none" href="#management">Управление</a></li>
         <li v-if="route.name === 'index'"><a class="text-decoration-none" href="#advantages">Преимущества</a></li>
         <li v-if="route.name === 'index'"><a class="text-decoration-none" href="#contacts">Контакты</a></li>
-        <li class="locale pointer" style="list-style: none; color: white; padding-left: 16px;">Рус
+        <li
+            class="locale pointer"
+            :class="{'locale-hovered': isHovering}"
+            @mouseover="isHovering = true"
+            @mouseout="isHovering = false"
+            style="list-style: none; color: white; padding-left: 16px;">Рус
           <icon class="ml-2" icon-name="arrow-down"/>
           <div class="languages">
             <p>Каз</p>
@@ -48,6 +53,7 @@ import {useRoute} from "nuxt/app";
 
 const route = useRoute()
 let isMenuOpen = ref(false)
+let isHovering = ref(false)
 let offSetTop = ref(0)
 const onScroll = (e) => {
   offSetTop.value = window.scrollY

@@ -69,16 +69,16 @@
         line-height: 16px;
       }
     }
+  }
+}
 
-    &:hover {
-      svg {
-        transform: rotate(180deg);
-      }
+.locale-hovered {
+  svg {
+    transform: rotate(180deg);
+  }
 
-      .languages {
-        opacity: 1;
-      }
-    }
+  .languages {
+    opacity: 1 !important;
   }
 }
 
