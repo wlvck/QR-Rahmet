@@ -14,8 +14,7 @@
             :class="{'locale-hovered': isHovering}"
             @mouseover="isHovering = true"
             @mouseout="isHovering = false"
-            @focus="isHovering = true"
-            @focusout="isHovering = false"
+            @click="isHovering = !isHovering"
             style="list-style: none; color: white; padding-left: 16px;">Рус
           <icon class="ml-2" icon-name="arrow-down"/>
           <div class="languages">
