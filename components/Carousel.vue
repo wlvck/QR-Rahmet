@@ -229,8 +229,6 @@ export default {
     }
   }
   .carousel__svg {
-    width: 300px;
-    height: max-content;
     bottom: 0;
   }
 }
@@ -275,10 +273,9 @@ export default {
     }
   }
   .carousel__svg {
+    max-height: 300px;
     margin: 0 auto;
     position: relative;
-    width: max-content;
-    height: max-content;
   }
 }
 </style>
